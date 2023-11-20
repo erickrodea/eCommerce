@@ -6,21 +6,21 @@ var toggleButton = document.querySelector(".toggle-button");
 var mobileNav = document.querySelector(".mobile-nav");
 var ctaButton = document.querySelector(".main-nav__item--cta");
 
-// console.dir(backdrop.style['background-image']);
+// console.dir(backdrop.style['envision Background Removed.png']);
 
 // console.dir(backdrop);
-for (var i = 0; i < selectPlanButtons.length; i++) {
-    selectPlanButtons[i].addEventListener("click", function () {
-        // modal.style.display = "block";
-        // backdrop.style.display = "block";
-        // modal.className = 'open'; // This will actually overwrite the complete class list
-        modal.classList.add("open");
-        backdrop.style.display = "block";
-        setTimeout(function () {
-            backdrop.classList.add("open");
-        }, 10);
-    });
-}
+// for (var i = 0; i < selectPlanButtons.length; i++) {
+//     selectPlanButtons[i].addEventListener("click", function () {
+//         // modal.style.display = "block";
+//         // backdrop.style.display = "block";
+//         // modal.className = 'open'; // This will actually overwrite the complete class list
+//         modal.classList.add("open");
+//         backdrop.style.display = "block";
+//         setTimeout(function () {
+//             backdrop.classList.add("open");
+//         }, 10);
+//     });
+// }
 
 backdrop.addEventListener("click", function () {
     // mobileNav.style.display = 'none';
@@ -32,6 +32,7 @@ if (modalNoButton) {
     modalNoButton.addEventListener("click", closeModal);
 }
 
+// gets rid of the backdrop upon clicking out of the modal
 function closeModal() {
     //   backdrop.style.display = "none";
     //   modal.style.display = "none";
@@ -44,6 +45,7 @@ function closeModal() {
     }, 200);
 }
 
+//allows modal to toggle open upon clicking 
 toggleButton.addEventListener("click", function () {
     // mobileNav.style.display = 'block';
     // backdrop.style.display = 'block';
